@@ -1,10 +1,13 @@
 # [library](https://github.com/lafelabs/library/)
-# [thing.json](thing.json)
-# [library.json](library.json)
 
-  ![title page](library.png)
   ![qrcode](qrcode.png)
-  
+  ![title page](library.png)
+
+   - [index.html](index.html)
+   - [library.html](library.html)
+   - [library.json](library.json)
+   - [thing.html](thing.html)
+   - [thing.json](thing.json)
    - [http://localhost/library/](http://localhost/library/)
    - [edit-html.html](edit-html.html)
    - [edit-index.html](edit-index.html)
@@ -12,10 +15,8 @@
    - [branch.html](branch.html)
    - [freebox.html](freebox.html)
    - [qrcode.html](qrcode.html)
-   - [library.html](library.html)
-   - [thing.html](thing.html)
    - [list-images.html](list-images.html)
-   - [global replicator link](https://raw.githubusercontent.com/lafefspietz/lab-notebook-number-three/refs/heads/main/php/replicator.txt)
+   - [global replicator link](https://raw.githubusercontent.com/lafelabs/library/refs/heads/main/php/replicator.txt)
   
 
 ## Replication instructions:
@@ -25,7 +26,7 @@
 3. If you don't already use [git](https://en.wikipedia.org/wiki/Git), install [Github Desktop](https://desktop.github.com/download/) to make it easy to use, and log into your Github account in Github Desktop
 4. Click the link on this repository to clone it to your local computer, and set the folder that the repository will be cloned into to "/xampp/htdocs/"
 5. Open XAMPP on your machine and click the radio button to turn the Apache server on. You only need to click the one radio button, the one for Apache.
-6. Go to the link at [http://localhost/lab-notebook-number-three/](http://localhost/lab-notebook-number-three/) to see the live instance of the thing.json file, or go to the live README instance at [http://localhost/lab-notebook-number-three/readme.html](http://localhost/lab-notebook-number-three/readme.html)
+6. Go to the link at [http://localhost/library/](http://localhost/library/) to see the live instance of the thing.json file, or go to the live README instance at [http://localhost/lab-notebook-number-three/readme.html](http://localhost/library/readme.html)
 
 
 Now you have cloned the repository for this physical object. To create your own object in the physical world, you will want to make your own object that changes all the data. 

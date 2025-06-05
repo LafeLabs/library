@@ -14,6 +14,7 @@
         "qrcode-page.html",
         "qrcode.html",
         "readme.html",
+        "thing.html",
         "thing.json",
         "trashmagic.css",
         "trashmagic.html",
