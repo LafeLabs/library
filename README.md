@@ -1,16 +1,20 @@
-# [Lab Notebook Number Three](https://github.com/lafefspietz/lab-notebook-number-three)
+# [library](https://github.com/lafelabs/library/)
 # [thing.json](thing.json)
+# [library.json](library.json)
 
-  ![front cover](front-cover.png)
-  ![title page](title-page.png)
+  ![title page](library.png)
   ![qrcode](qrcode.png)
   
-   - [http://localhost/lab-notebook-number-three/](http://localhost/lab-notebook-number-three/)
+   - [http://localhost/library/](http://localhost/library/)
    - [edit-html.html](edit-html.html)
    - [edit-index.html](edit-index.html)
    - [edit-php.html](edit-php.html)
    - [branch.html](branch.html)
+   - [freebox.html](freebox.html)
    - [qrcode.html](qrcode.html)
+   - [library.html](library.html)
+   - [thing.html](thing.html)
+   - [list-images.html](list-images.html)
    - [global replicator link](https://raw.githubusercontent.com/lafefspietz/lab-notebook-number-three/refs/heads/main/php/replicator.txt)
   
 

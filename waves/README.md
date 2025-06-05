@@ -2,10 +2,19 @@
 
 # [thing.json](thing.json)
 
-  ![front cover](front-cover.png)
-  ![title page](title-page.png)
-  ![qrcode](qrcode.png)
+![front-cover.png](front-cover.png)
+![front-matter-1.png](front-matter-1.png)
+![front-matter-2.png](front-matter-2.png)
+![front-matter-3.png](front-matter-3.png)
+![the-electromagnetic-spectrum.png](the-electromagnetic-spectrum.png)
+![units-and-identities.png](units-and-identities.png)
+![useful-constants.png](useful-constants.png)
+![front cover](front-cover.png)
+![title page](title-page.png)
+![qrcode](qrcode.png)
   
+   - [../](../)
+   - [list-images.html](list-images.html)
    - [http://localhost/library/waves/](http://localhost/library/waves/)
    - [http://localhost/library/waves/readme.html](http://localhost/library/waves/readme.html)
    - [edit-html.html](edit-html.html)
