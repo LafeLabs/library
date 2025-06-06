@@ -1,5 +1,6 @@
 # [library](https://github.com/lafelabs/library/)
 # [index.html](index.html)
+# [thing.json](thing.json)
 
   ![qrcode](qrcode.png)
   

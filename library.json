@@ -1,11 +1,5 @@
 [
     {
-        "display": "enter display name",
-        "github": "enter url",
-        "url": "enter url",
-        "sort": "enter sorting parameter"
-    },
-    {
         "url": "https://github.com/lafelabs/library/",
         "display": "library",
         "address": "book 1"
