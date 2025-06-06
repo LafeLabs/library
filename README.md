@@ -4,9 +4,7 @@
   ![title page](library.png)
 
    - [index.html](index.html)
-   - [library.html](library.html)
    - [library.json](library.json)
-   - [thing.html](thing.html)
    - [thing.json](thing.json)
    - [http://localhost/library/](http://localhost/library/)
    - [edit-html.html](edit-html.html)

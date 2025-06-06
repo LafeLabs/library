@@ -1,9 +1,9 @@
 <p style = "font-size:5em">
-    <a href = "freebox.html">FREEBOX</a>
+    <a href = "image-feed.html">image-feed.html</a>
 </p>
 
 <p style = "font-size:5em">
-    <a href = "index.html">HOME</a>
+    <a href = "index.html">index.html</a>
 </p>
 
 <?php

@@ -1,8 +1,5 @@
 {
-    "name": "library",
-    "location": "github",
-    "description": "self-replicating JSON based library system",
-    "contact": "dirt wizard 666",
-    "message": "hi!",
-    "url": "https://github.com/lafelabs/library/"
+    "url": "https://github.com/lafelabs/library/",
+    "display": "library",
+    "address": "book 1"
 }
