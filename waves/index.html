@@ -2,67 +2,227 @@
 <html>
 <head>
  <!-- 
-README MARKDOWN EDITOR!
-
+Library of things
 -->
 
 <!--Stop Google:-->
 <META NAME="robots" CONTENT="noindex,nofollow">
     
-<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAADw8OAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAABAAEAAAAQAAEAERAAABARAQEREQAAEBEBAAEAAAAREREAAQAAABEAEQABAAAAEQARAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAA3u8AAN7HAADSgwAA0u8AAMDvAADM7wAAzO8AAP//AAD//wAA//8AAP//AAD//wAA" rel="icon" type="image/x-icon">
+<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAD///8A/vv4APrx5QDy3LwA4K1hAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAREREREREREREREREREREREREAAAAREREREQAAAAERERERAAERABEREREAAQgAEREREQABAAABERERAAEQAAEREREAAREABREREQABEREREREREQ0REREREREQABERERERERAAEREREREREAAREREREREREREREREREREREREREQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon">
 
-    
-<!--
-ace.js project home:
-https://ace.c9.io/
-
-list of languages:
-https://cloud9-sdk.readme.io/docs/language-mode
-
-
--->    
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" charset="utf-8"></script>
-    <script src = "https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.js"></script>
-    <!--
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script>
-            MathJax.Hub.Config({
-                tex2jax: {
-                inlineMath: [['$','$'], ['\\(','\\)']],
-                processEscapes: true,
-                processClass: "mathjax",
-                ignoreClass: "no-mathjax"
-                }
-            });//			MathJax.Hub.Typeset();//tell Mathjax to update the math
-        </script>
-        -->
-        
-<title>Web of things</title>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>        
+<title>Library of things</title>
 </head>
+<style>
+    .button{
+        cursor:pointer;
+        border:solid;
+        width:12em;
+        border-radius:5px;
+    }
+    .button:hover{
+        background-color:green;
+    }
+    .button:active{
+        background-color:yellow;
+    }
+
+    #qrcode img{
+        border:solid;
+        border-color:white;
+        border-width:50px;
+    }
+</style>
 <body>
-    <h1>
-        <a href = "edit-index.html">edit-index.html</a>
-    </h1>
-    <h1>
-        <A href = "readme.html">readme.html</A>
-    </h1>
+    
+    <div id = "qrcode"></div>
+    <div class = "button" id = "save-qrcode-button">Save qrcode.png file</div>
+    
     <h1>
         <a href = "thing.json">thing.json</a>
     </h1>
+    <h1>
+        <A id = "thinglink"></A>
+    </h1>
+<table>
+    <tr>
+        <td>New attribute name:</td>
+        <td>
+            <input id = "newnameinput">
+        </td>
+    </tr>
+</table>
 <table id ="thingtable"></table>
 
+<h1>
+    <a href = "library.json">library.json</a>
+</h1>
+<ol id = "library"></ol>
+
+<h1>Tree</h1>
+<ul id = "tree"></ul>
+
+
+<h1>Local Links</h1>
+<ul>
+    <li>
+        <a href = "edit-index.html">edit-index.html</a>
+    </li>
+    <li>
+        <a href = "edit-php.html">edit-php.html</a>
+    </li>
+    <li>
+        <a href = "edit-html.html">edit-html.html</a>
+    </li>
+    <li>
+        <a href = "readme.html">readme.html</a>
+    </li>
+    <li>
+        <a href = "qrcode.html">qrcode.html</a>
+    </li>
+    <li>
+        <a href = "qrcode-page.html">qrcode-page.html</a>
+    </li>
+    <li>
+        <a href = "image-feed.html">image-feed.html</a>
+    </li>
+    <li>
+        <a href= "list-images.html">list-images.html</a>
+    </li>
+</ul>
+
+<h1>
+    <a href = "image-feed.html">
+        Image Feed
+    </a>
+</h1>
+
+<div id = "image-feed"></div>
+
 <script>
+codesquaresize = 350;//size of qr code in pixels
+
+document.getElementById("save-qrcode-button").onclick = function(){
+    png64 = document.getElementsByTagName("IMG")[0].src;
+    var httpc = new XMLHttpRequest();
+    var url = "save-png.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    httpc.send("data="+encodeURIComponent(png64.substring(22))+"&filename=qrcode.png");//send text to filesaver.php
+     //location.reload(); 
+}
+
+document.getElementById("newnameinput").value = "";
+document.getElementById("newnameinput").onchange = function(){
+    newname = this.value;
+    thing[newname] = "";
+    savething();
+    loadthing();
+}
 
 thing = {};
+library  = [];
+buildlibrary();
 
-thing.title = "Waves: Berkeley physics course Volume 3";
-thing.location = "DIRT WIZARD HAS IT AT HOME";
-thing.description = "Hard Bound textbook";
-thing.contact = "send text message to (303)817-8283";
-thing.message = "do you want to read about waves?";
+function loadlibrary(){
+    document.getElementById("library").innerHTML = "";
+    for(var index = 0;index < library.length;index++){
+        var newli = document.createElement("LI");
+        var newa = document.createElement("A");
+        newa.innerHTML = library[index].display;
+        newa.href = library[index].url;
+        newli.appendChild(newa);
+        document.getElementById("library").appendChild(newli);
+    }
+}
+        
+function buildlibrary(){
+    directories = [];
+    var httpc2 = new XMLHttpRequest();
+    httpc2.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        directories = JSON.parse(this.responseText);
+        document.getElementById("tree").innerHTML = "";
+        var newli = document.createElement("LI");
+        var newa = document.createElement("A");
+        newa.innerHTML = "../";
+        newa.href = "../";
+        newli.appendChild(newa);
+        document.getElementById("tree").appendChild(newli);
+        var newli = document.createElement("LI");
+        var newa = document.createElement("A");
+        newa.innerHTML = "branch.html";
+        newa.href = "branch.html";
+        newli.appendChild(newa);
+        document.getElementById("tree").appendChild(newli);
+
+        
+        for(var index =  0;index < directories.length;index++){
+            
+            var newli = document.createElement("LI");
+            var newa = document.createElement("A");
+            newa.innerHTML = directories[index] + "/";
+            newa.href = directories[index] + "/";
+            newli.appendChild(newa);
+            document.getElementById("tree").appendChild(newli);
+            
+            var httpc = new XMLHttpRequest();
+            httpc.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    var localjson = JSON.parse(this.responseText);
+                    library.push(localjson);
+                    loadlibrary();
+                    savelibrary();
+                }
+            };
+            httpc.open("GET", "load-file.php?filename=" + directories[index] + "/thing.json", true);
+            httpc.send();
+            }
+        }
+        //sort by address attribute here
+        for(var index = 0;index < library.length;index++){
+            var newli = document.createElement("LI");
+            var newa = document.createElement("A");
+            newa.innerHTML = library[index].display;
+            newa.href = library[index].url;
+            newli.appendChild(newa);
+            document.getElementById("library").appendChild(newli);
+            console.log(index.toString());
+        }
+    };
+    httpc2.open("GET", "list-branches.php", true);
+    httpc2.send();
+}
+
+/*
+thing.address ="book 1";
+thing.url = "https://github.com/lafelabs/library/";
+thing.display = "library";
+savething();
+*/
+
+
+/*
+thing.name = "Lab Notebook #3 (2024 reboot)";
+thing.location = "NIST Boulder, building 1, room 2111";
+thing.description = "Green hard cover bound notebook with NIST logo, used for daily record of Lafe Spietz's work at NIST in flux quantum electronics project in Volt group in the RF technoloogy division of the communications technology laboratory at the National Institute of Standards and Technology in Boulder, Colorado";
+thing.contact = "cell phone: (303)817-8283 email: lafe.f.spietz@nist.gov";
+thing.message = "if found, please return";
 thing.url = "https://github.com/lafefspietz/lab-notebook-number-three/";
 savething();
+*/
+
+/*
+
+a library is a json array with all the thing.json from all the things in the thing library 
+
+to create a library we need each thing to have a:
+1. address attribute
+2. display attribute
+3. url attribute
+
+*/
+
 loadthing();
 
 
@@ -72,20 +232,45 @@ function loadtable(){
         var newtr = document.createElement("TR");
         document.getElementById("thingtable").appendChild(newtr);
         var newtd = document.createElement("TD");
-        newtd.innerHTML = key;
+        newtr.appendChild(newtd);
+        var newinput = document.createElement("INPUT");
+        newtd.appendChild(newinput);
+        newinput.value = key;
+        newinput.onchange = function(){
+            var localkey = this.parentNode.parentNode.getElementsByTagName("TD")[0].getElementsByTagName("INPUT")[0].value;
+            thing[localkey] = this.parentNode.parentNode.getElementsByTagName("TD")[2].getElementsByTagName("INPUT")[0].value;
+            savething();
+            loadthing();
+        }
+        var newtd = document.createElement("TD");
+        newtd.innerHTML = ":";
         newtr.appendChild(newtd);
         var newtd = document.createElement("TD");
         var newinput = document.createElement("INPUT");
+        newinput.className = "value";
         newtd.appendChild(newinput);
         newtr.appendChild(newtd);
         newinput.value = thing[key];
         newinput.onchange = function(){
-            var localkey = this.parentNode.parentNode.getElementsByTagName("TD")[0].innerHTML;
+            var localkey = this.parentNode.parentNode.getElementsByTagName("TD")[0].getElementsByTagName("INPUT")[0].value;
             thing[localkey] = this.value;
             savething();
         }
+        var newtd = document.createElement("TD");
+        newtd.innerHTML = "DELETE";
+        newtd.className = "deletex";
+        newtd.onclick = function(){
+            var localkey = this.parentNode.getElementsByTagName("TD")[0].getElementsByTagName("INPUT")[0].value;
+            delete thing[localkey];
+            fixthing();
+            savething();
+            loadthing();
+        }
+        newtr.appendChild(newtd);
     }
+    
 }
+
 
 function loadthing(){
     thing = {};
@@ -93,6 +278,19 @@ function loadthing(){
     httpc.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             thing = JSON.parse(this.responseText);
+
+            document.getElementById("thinglink").href = thing.url;
+            document.getElementById("thinglink").innerHTML = thing.display;
+            
+
+            qrcode = new QRCode(document.getElementById("qrcode"), {
+            	text: thing.url,
+            	width: codesquaresize,
+            	height: codesquaresize,
+            	colorDark : "#000000",
+            	colorLight : "#ffffff",
+            	correctLevel : QRCode.CorrectLevel.H
+            });
             loadtable();
         }
     };
@@ -110,9 +308,110 @@ function savething(){
     httpc.send("data="+data+"&filename=thing.json");//send text to save-file.php
 }
 
+function savelibrary(){
+    data = encodeURIComponent(JSON.stringify(library,null,"    "));
+    var httpc = new XMLHttpRequest();
+    var url = "save-file.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data="+data+"&filename=library.json");//send text to save-file.php
+    
+}
+
+function fixthing(){
+    if(thing.address == undefined){    
+        thing.address ="book 1";
+    }
+    if(thing.url == undefined){
+        thing.url = "https://github.com/lafelabs/library/";
+    }
+    if(thing.display == undefined){
+        thing.display = "library";
+    }
+}
+
+
+uploadImages = [];
+
+deletemode = false;
+
+var httpcUpload = new XMLHttpRequest();
+httpcUpload.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        uploadImages = JSON.parse(this.responseText);
+        loadimagefeed();
+    }
+};
+httpcUpload.open("GET", "list-files.php", true);
+httpcUpload.send();
+
+function loadimagefeed(){
+
+    for(var index = 0;index < uploadImages.length;index++) {
+        if(uploadImages[index].includes(".png") || uploadImages[index].includes(".PNG") || uploadImages[index].includes(".jpg") || uploadImages[index].includes(".JPG") ||uploadImages[index].includes(".jpeg") || uploadImages[index].includes(".gif") ||uploadImages[index].includes(".GIF")){
+            
+            var newuploadbox = document.createElement("DIV");
+            newuploadbox.classList.add("imagebox");
+            var newimg = document.createElement("IMG");
+            newimg.src = uploadImages[index];
+            newimg.classList.add("uploadimage");
+            newuploadbox.appendChild(newimg);
+            document.getElementById("image-feed").appendChild(newuploadbox);
+    
+            var newdiv = document.createElement("DIV");
+            newdiv.innerHTML = uploadImages[index];
+            newdiv.className = "filelabel";
+            newuploadbox.appendChild(newdiv);
+        
+            if(deletemode){
+                var newspan = document.createElement("SPAN");
+                newspan.innerHTML = "DELETE";
+                newuploadbox.appendChild(newspan);
+                newspan.classList.add("button");
+                newspan.classList.add("deletebutton");
+                newspan.onclick = function(){
+                    var imageurl =this.parentElement.getElementsByClassName("uploadimage")[0].src; 
+                    imagefilename = imageurl.split("/")[imageurl.split("/").length-1];
+                    console.log("imagefilename");
+                    var httpc = new XMLHttpRequest();
+                    var url = "delete-file.php";         
+                    httpc.open("POST", url, true);
+                    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+                    httpc.send("filename=" + imagefilename);//send text to deletefile.php
+                    this.parentElement.parentElement.removeChild(this.parentElement);
+                }   
+            }   
+            
+            
+        }
+    }    
+}
 </script>
 <style>
-input{
+body{
+    font-family:Arial;
+    font-size:1.5em;
+}
+a{
+    color:blue;
+}
+img{
+    display:block;
+    max-width:80%;
+    margin:auto;
+}
+.deletex{
+    color:red;
+    cursor:pointer;
+}
+.deletex:hover{
+    background-color:green;
+}
+.deletex:active{
+    background-color:yellow;
+}
+
+.value{
     width:60em;
 }
 </style>

@@ -1,7 +1,16 @@
 # [library](https://github.com/lafelabs/library/)
+# [index.html](index.html)
 
   ![qrcode](qrcode.png)
-  ![title page](library.png)
+  
+# Thing
+    
+This thing exists in a library, maintained by a librarian.  Contact the librarian to use it and then return it. 
+
+  ![thing.png](thing.png)
+
+
+# Links
 
    - [index.html](index.html)
    - [library.json](library.json)
