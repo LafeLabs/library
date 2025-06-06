@@ -1,5 +1,17 @@
 {
     "url": "https://github.com/lafelabs/library/",
     "display": "library",
-    "address": "book 1"
+    "address": "book 1",
+    "title": "",
+    "author": "",
+    "location": "",
+    "loc call number": "",
+    "worldcat number": "",
+    "message": "",
+    "notes": "",
+    "description": "",
+    "condition": "",
+    "publisher": "",
+    "isbn": "",
+    "dewey decimal call number": ""
 }

@@ -284,7 +284,7 @@ function loadthing(){
             document.getElementById("thinglink").href = thing.url;
             document.getElementById("thinglink").innerHTML = thing.display;
             
-
+            document.getElementById("qrcode").innerHTML = "";
             qrcode = new QRCode(document.getElementById("qrcode"), {
             	text: thing.url,
             	width: codesquaresize,
