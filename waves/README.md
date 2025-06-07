@@ -1,33 +1,53 @@
-# [library](https://github.com/lafelabs/library/)
+# [waves](https://github.com/lafelabs/library/)
 # [index.html](index.html)
 # [thing.json](thing.json)
 
   ![qrcode](qrcode.png)
-  
-# Thing
-    
-This thing exists in a library, maintained by a librarian.  Contact the librarian to use it and then return it. 
-
   ![thing.png](thing.png)
-
-
-# Links
-
-   - [index.html](index.html)
-   - [library.json](library.json)
-   - [thing.json](thing.json)
-   - [http://localhost/library/](http://localhost/library/)
-   - [edit-html.html](edit-html.html)
-   - [edit-index.html](edit-index.html)
-   - [edit-php.html](edit-php.html)
-   - [branch.html](branch.html)
-   - [freebox.html](freebox.html)
-   - [qrcode.html](qrcode.html)
-   - [list-images.html](list-images.html)
-   - [global replicator link](https://raw.githubusercontent.com/lafelabs/library/refs/heads/main/php/replicator.txt)
   
+# Berkeley Physics Course Volume 3: Waves
 
-## Replication instructions:
+## [Live Trash Magic wall for the book](https://trashrobot.net/wall/library/waves/index.html)
+    
+
+```
+{
+    "url": "https://github.com/LafeLabs/library/tree/main/waves",
+    "display": "Waves: Berkeley Physics Course Volume 3",
+    "title": "Waves: Berkeley Physics Course Volume 3",
+    "author": "Frank S. Crawford, Jr.",
+    "location": "Dirt Wizard trash magic library",
+    "loc call number": "QC157 .C73 1968 ",
+    "worldcat number": "720110",
+    "message": "to borrow, contact the dirt wizard on mastodon at cyberpunk.lol/@dirtwizard666 ",
+    "notes": "https://trashrobot.net/wall/library/waves/index.html is the wall for this book",
+    "description": "The Berkeley physics course is iconic!  This is a whole text book just on wave phenomena! ",
+    "condition": "decent",
+    "publisher": " McGraw-Hill, New York, [©1968]",
+    "isbn": "978-0070048607",
+    "dewey decimal call number": "",
+    "contact": "",
+    "subjects": "",
+    "keywords": "waves, physics, textbook, berkeley",
+    "length": "599",
+    "index": "book 4",
+    "date": "1968",
+    "physical description": "xviii, 600 pages illustrations 25 cm",
+    "contents": ""
+}
+```
+
+![](front-matter-1.png)
+![](front-matter-2.png)
+![](front-matter-3.png)
+![the-electromagnetic-spectrum.png](the-electromagnetic-spectrum.png)
+![units-and-identities.png](units-and-identities.png)
+![useful-constants.png](useful-constants.png)
+
+
+
+
+## Library Replication instructions:
 
 1. Install [XAMPP](https://www.apachefriends.org/) on your computer
 2. If you don't have one, get a [Github](github.com/) account and sign into it
