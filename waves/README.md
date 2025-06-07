@@ -1,5 +1,6 @@
 # [library](https://github.com/lafelabs/library/)
 # [index.html](index.html)
+# [thing.json](thing.json)
 
   ![qrcode](qrcode.png)
   
@@ -44,7 +45,7 @@ Now you have cloned the repository for this physical object. To create your own 
 2. Create a new Github repository with that name
 3. Clone to your local drive as per the previous instructions
 4. Copy and paste all the visible files from the original repository to the new repository
-5. Navigate your browser to "http://localhost/[name of repo here]", e.g. http://localhost/journal-number-5
+5. Navigate your browser to "http://localhost/[name-of-repo-here]", e.g. http://localhost/journal-number-5
 6. Edit the data in thing.json using index.html and push your new verison to Github using Github Desktop
 7. Change the QR code to be your specific one, save it, put it on the object 
 8. Enter repository into any relevant databases of things to make it searcheable

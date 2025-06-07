@@ -43,8 +43,8 @@
         "address": "book 1"
     },
     {
-        "url": "https://github.com/LafeLabs/library/tree/main/book",
-        "display": "library",
+        "url": "https://github.com/LafeLabs/library/tree/main/the-third-wave/",
+        "display": "The Third Wave",
         "address": "book 1",
         "title": "",
         "author": "",
@@ -61,12 +61,28 @@
         "contact": "",
         "subjects": "",
         "keywords": "",
-        "length": ""
+        "length": "",
+        "index": "book 3"
     },
     {
-        "url": "https://github.com/lafelabs/library/",
-        "display": "library",
-        "address": "book 1",
-        "title": ""
+        "url": "https://github.com/LafeLabs/library/tree/main/waves",
+        "display": "Waves: Berkeley Physics Course Volume 3",
+        "title": "",
+        "author": "",
+        "location": "",
+        "loc call number": "",
+        "worldcat number": "",
+        "message": "",
+        "notes": "",
+        "description": "",
+        "condition": "",
+        "publisher": "",
+        "isbn": "",
+        "dewey decimal call number": "",
+        "contact": "",
+        "subjects": "",
+        "keywords": "",
+        "length": "",
+        "index": "book 4"
     }
 ]

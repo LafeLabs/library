@@ -1,6 +1,6 @@
 {
-    "url": "https://github.com/LafeLabs/library/tree/main/book",
-    "display": "library",
+    "url": "https://github.com/LafeLabs/library/tree/main/the-third-wave/",
+    "display": "The Third Wave",
     "address": "book 1",
     "title": "",
     "author": "",
@@ -17,5 +17,6 @@
     "contact": "",
     "subjects": "",
     "keywords": "",
-    "length": ""
+    "length": "",
+    "index": "book 3"
 }
