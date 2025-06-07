@@ -1,7 +1,6 @@
 {
     "url": "https://github.com/LafeLabs/library/tree/main/book",
     "display": "library",
-    "address": "book 1",
     "title": "",
     "author": "",
     "location": "",
@@ -17,5 +16,6 @@
     "contact": "",
     "subjects": "",
     "keywords": "",
-    "length": ""
+    "length": "",
+    "index": "book 1"
 }

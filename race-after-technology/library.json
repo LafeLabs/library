@@ -13,5 +13,11 @@
         "url": "https://github.com/lafelabs/library/",
         "display": "library",
         "address": "book 1"
+    },
+    {
+        "url": "https://github.com/lafelabs/library/",
+        "display": "library",
+        "address": "book 1",
+        "title": ""
     }
 ]
