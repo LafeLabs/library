@@ -1,7 +1,8 @@
 [
     {
-        "url": "https://github.com/LafeLabs/library/tree/main/race-after-technology",
+        "url": "https://github.com/LafeLabs/library/tree/main/race-after-technology/",
         "display": "Race After Technology",
+        "address": "book 1",
         "title": "",
         "author": "",
         "location": "",
@@ -17,15 +18,14 @@
         "contact": "",
         "subjects": "",
         "keywords": "",
-        "length": "",
-        "index": "book 1"
+        "length": ""
     },
     {
         "url": "https://github.com/lafelabs/library/",
         "display": "library",
         "address": "book 1"
-    },
-    {
+    }
+]    {
         "url": "https://github.com/lafelabs/library/",
         "display": "library",
         "address": "book 1"
