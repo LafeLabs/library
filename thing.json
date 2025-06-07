@@ -1,5 +1,5 @@
 {
-    "url": "https://github.com/lafelabs/library/",
+    "url": "https://github.com/LafeLabs/library/tree/main/book",
     "display": "library",
     "address": "book 1",
     "title": "",
@@ -13,5 +13,9 @@
     "condition": "",
     "publisher": "",
     "isbn": "",
-    "dewey decimal call number": ""
+    "dewey decimal call number": "",
+    "contact": "",
+    "subjects": "",
+    "keywords": "",
+    "length": ""
 }
