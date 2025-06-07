@@ -1,14 +1,35 @@
-# [library](https://github.com/lafelabs/library/)
-# [index.html](index.html)
-# [thing.json](thing.json)
+
+  
+# [Race after technology : abolitionist tools for the New Jim Code](https://github.com/LafeLabs/library/tree/main/race-after-technology/)
 
   ![qrcode](qrcode.png)
-  
-# Thing
-    
-This thing exists in a library, maintained by a librarian.  Contact the librarian to use it and then return it. 
-
   ![thing.png](thing.png)
+
+# [thing.json](thing.json)
+
+```
+{
+    "url": "https://github.com/LafeLabs/library/tree/main/race-after-technology/",
+    "display": "Race after technology : abolitionist tools for the New Jim Code ",
+    "title": "Race after technology : abolitionist tools for the New Jim Code",
+    "author": "Ruha Benjamin",
+    "location": "Dirt Wizard trash magic library",
+    "loc call number": "HN90 .I56 B46 2019",
+    "worldcat number": "1078415817",
+    "message": "",
+    "notes": "",
+    "description": "8.5\" x 5.5\" x 0.75\" soft bound 285 page book volume",
+    "condition": "as new",
+    "publisher": "Polity Press",
+    "isbn": "9781509526390",
+    "dewey decimal call number": "303.483309 Benjamin",
+    "subjects": "",
+    "keywords": "",
+    "length": "285 pages",
+    "index": "book 1"
+}
+```
+
 
 
 # Links
