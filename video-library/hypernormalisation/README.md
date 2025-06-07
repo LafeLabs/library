@@ -1,8 +1,10 @@
-# [Hypernormalisation](https://github.com/LafeLabs/library/tree/main/video-library/hypernormalization)
+# [Hypernormalisation](https://github.com/LafeLabs/library/tree/main/video-library/hypernormalisation)
 
 # [Watch on Internet Archive](https://archive.org/details/HyperNormalisation)    
 
   ![thing.png](thing.png)
+  
+  
   ![qrcode.png](qrcode.png)
 
 # Links
