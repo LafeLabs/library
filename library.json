@@ -21,6 +21,27 @@
         "index": "book 1"
     },
     {
+        "url": "https://github.com/LafeLabs/library/tree/main/the-interruption",
+        "display": "The Interruption: Simulumis Level Two",
+        "title": "The Interruption: Simulumis Level Two",
+        "author": "Bo Mandoe",
+        "location": "Dirt Wizard Library",
+        "loc call number": "",
+        "worldcat number": "",
+        "message": "",
+        "notes": "",
+        "description": "",
+        "condition": "",
+        "publisher": "923 Publishing",
+        "isbn": " 979-8988122937",
+        "dewey decimal call number": "",
+        "contact": "",
+        "subjects": "",
+        "keywords": "",
+        "length": "237 pages",
+        "index": "book 1"
+    },
+    {
         "url": "https://github.com/LafeLabs/library/tree/main/race-after-technology/",
         "display": "Race after technology : abolitionist tools for the New Jim Code ",
         "title": "Race after technology : abolitionist tools for the New Jim Code",
@@ -63,27 +84,6 @@
         "index": "book 1",
         "summary": "\"Taking Emerson as his starting point, Cornel West's basic task in this ambitious enterprise is to chart the emergence, development, decline, and recent resurgence of American pragmatism. John Dewey is the central figure in West's pantheon of pragmatists, but he treats as well such varied mid-century representatives of the tradition as Sidney Hook, C. Wright Mills, W. E. B. Du Bois, Reinhold Niebuhr, and Lionel Trilling. West's \"genealogy\" is, ultimately, a very personal work, for it is imbued throughout with the author's conviction that a thorough reexamination of American pragmatism may help inspire and instruct contemporary efforts to remake and reform American society and culture.\"",
         "contents": "1. The Emersonian prehistory of American pragmatism. Emerson on power (and tradition) ; Emerson on provocation (and the market) ; Emerson on personality (and race) ; Emerson as organic intellectual 2. The historic emergence of American pragmatism. Peirce on scientific method, community, and Christian love ; James on individuality, reconciliation, and heroic energies 3. The coming-of-age of American pragmatism: John Dewey. Dewey on historical consciousness, critical intelligence, and creative democracy 4. The dilemma of the mid-century pragmatic intellectual. Sidney Hook: the Deweyan political intellectual ; C. Wright Mills: the neo-Deweyan radical social critic ; W.E.B. Du Bois: the Jamesian organic intellectual ; Reinhold Niebuhr: the Jamesian cultural critic ; Lionel Trilling: the pragmatist as Arnoldian literary critic ; The decline and resurgence of American pragmatism: W.V. Quine and Richard Rorty 5. Prophetic pragmatism: cultural criticism and political engagement. Roberto Unger and Third-Wave Left romanticism ; The challenge of Michel Foucault ; Tragedy, tradition, and political praxis ; Prophetic pragmatism and postmodernity"
-    }
-]    {
-        "url": "https://github.com/LafeLabs/library/tree/main/the-interruption",
-        "display": "The Interruption: Simulumis Level Two",
-        "title": "The Interruption: Simulumis Level Two",
-        "author": "Bo Mandoe",
-        "location": "Dirt Wizard Library",
-        "loc call number": "",
-        "worldcat number": "",
-        "message": "",
-        "notes": "",
-        "description": "",
-        "condition": "",
-        "publisher": "923 Publishing",
-        "isbn": " 979-8988122937",
-        "dewey decimal call number": "",
-        "contact": "",
-        "subjects": "",
-        "keywords": "",
-        "length": "237 pages",
-        "index": "book 1"
     },
     {
         "url": "https://github.com/LafeLabs/library/tree/main/video-library/video",
@@ -105,5 +105,29 @@
         "keywords": "",
         "length": "",
         "index": "book 1"
+    },
+    {
+        "url": "https://github.com/LafeLabs/library/tree/main/waves",
+        "display": "Waves: Berkeley Physics Course Volume 3",
+        "title": "Waves: Berkeley Physics Course Volume 3",
+        "author": "Frank S. Crawford, Jr.",
+        "location": "Dirt Wizard trash magic library",
+        "loc call number": "QC157 .C73 1968 ",
+        "worldcat number": "720110",
+        "message": "to borrow, contact the dirt wizard on mastodon at cyberpunk.lol/@dirtwizard666 ",
+        "notes": "https://trashrobot.net/wall/library/waves/index.html is the wall for this book",
+        "description": "The Berkeley physics course is iconic!  This is a whole text book just on wave phenomena! ",
+        "condition": "decent",
+        "publisher": " McGraw-Hill, New York, [©1968]",
+        "isbn": "978-0070048607",
+        "dewey decimal call number": "",
+        "contact": "",
+        "subjects": "",
+        "keywords": "waves, physics, textbook, berkeley",
+        "length": "599",
+        "index": "book 4",
+        "date": "1968",
+        "physical description": "xviii, 600 pages illustrations 25 cm",
+        "contents": ""
     }
 ]
