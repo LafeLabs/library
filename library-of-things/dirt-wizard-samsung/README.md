@@ -1,16 +1,13 @@
-# [library](https://github.com/lafelabs/library/)
-# [index.html](index.html)
-# [library.json](library.json)
-# [thing.json](thing.json)
-
-  ![qrcode](qrcode.png)
-  
-# Thing
-    
-This thing exists in a library, maintained by a librarian.  Contact the librarian to use it and then return it. 
+# [DIRT WIZARD SAMSUNG](https://github.com/LafeLabs/library/tree/main/library-of-things/dirt-wizard-samsung/)
 
   ![thing.png](thing.png)
 
+  ![qrcode](qrcode.png)
+  
+## [LIVE TRASH MAGIC WALL FOR THIS THING](https://trashrobot.net/wall/library/library-of-things/dirt-wizard-samsung/)
+
+
+## [SELF REPLICATING WEB SERVER REPLICATOR](https://github.com/LafeLabs/TRASH-MAGIC-HANDBOOK)
 
 # Links
 

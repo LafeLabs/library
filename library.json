@@ -1,5 +1,26 @@
 [
     {
+        "url": "https://github.com/LafeLabs/library/tree/main/book",
+        "display": "library",
+        "title": "",
+        "author": "",
+        "location": "",
+        "loc call number": "",
+        "worldcat number": "",
+        "message": "",
+        "notes": "",
+        "description": "",
+        "condition": "",
+        "publisher": "",
+        "isbn": "",
+        "dewey decimal call number": "",
+        "contact": "",
+        "subjects": "",
+        "keywords": "",
+        "length": "",
+        "index": "book 1"
+    },
+    {
         "url": "https://github.com/LafeLabs/library/tree/main/library-of-things/dirt-wizard-samsung/",
         "display": "FREE WEB SERVER!",
         "title": "",
@@ -20,27 +41,6 @@
         "length": "",
         "index": "book 1",
         "OS": "UBUNTU"
-    },
-    {
-        "url": "https://github.com/LafeLabs/library/tree/main/book",
-        "display": "library",
-        "title": "",
-        "author": "",
-        "location": "",
-        "loc call number": "",
-        "worldcat number": "",
-        "message": "",
-        "notes": "",
-        "description": "",
-        "condition": "",
-        "publisher": "",
-        "isbn": "",
-        "dewey decimal call number": "",
-        "contact": "",
-        "subjects": "",
-        "keywords": "",
-        "length": "",
-        "index": "book 1"
     },
     {
         "url": "https://github.com/LafeLabs/library/tree/main/race-after-technology/",
@@ -106,8 +106,8 @@
         "keywords": "",
         "length": "237 pages",
         "index": "book 1"
-    }
-]    {
+    },
+    {
         "url": "https://github.com/LafeLabs/library/tree/main/video-library/video",
         "display": "video",
         "title": "",
@@ -127,5 +127,29 @@
         "keywords": "",
         "length": "",
         "index": "book 1"
+    },
+    {
+        "url": "https://github.com/LafeLabs/library/tree/main/waves",
+        "display": "Waves: Berkeley Physics Course Volume 3",
+        "title": "Waves: Berkeley Physics Course Volume 3",
+        "author": "Frank S. Crawford, Jr.",
+        "location": "Dirt Wizard trash magic library",
+        "loc call number": "QC157 .C73 1968 ",
+        "worldcat number": "720110",
+        "message": "to borrow, contact the dirt wizard on mastodon at cyberpunk.lol/@dirtwizard666 ",
+        "notes": "https://trashrobot.net/wall/library/waves/index.html is the wall for this book",
+        "description": "The Berkeley physics course is iconic!  This is a whole text book just on wave phenomena! ",
+        "condition": "decent",
+        "publisher": " McGraw-Hill, New York, [©1968]",
+        "isbn": "978-0070048607",
+        "dewey decimal call number": "",
+        "contact": "",
+        "subjects": "",
+        "keywords": "waves, physics, textbook, berkeley",
+        "length": "599",
+        "index": "book 4",
+        "date": "1968",
+        "physical description": "xviii, 600 pages illustrations 25 cm",
+        "contents": ""
     }
 ]
