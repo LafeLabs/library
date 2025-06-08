@@ -1,16 +1,11 @@
-# [library](https://github.com/lafelabs/library/)
-# [index.html](index.html)
-# [library.json](library.json)
-# [thing.json](thing.json)
-
-  ![qrcode](qrcode.png)
-  
-# Thing
+# [PIZZA BOX](https://github.com/LafeLabs/library/tree/main/library-of-things/pizza-box/)
     
-This thing exists in a library, maintained by a librarian.  Contact the librarian to use it and then return it. 
-
   ![thing.png](thing.png)
+  ![qrcode](qrcode.png)
 
+## [LIVE TRASH MAGIC WALL FOR THE PIZZA BOX](https://trashrobot.net/wall/library/library-of-things/pizza-box/)
+
+## [thing.json](thing.json)
 
 # Links
 
