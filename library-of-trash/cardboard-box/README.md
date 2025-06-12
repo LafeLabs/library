@@ -1,6 +1,5 @@
 # [library](https://github.com/lafelabs/library/)
 # [index.html](index.html)
-# [library.json](library.json)
 # [thing.json](thing.json)
 
   ![qrcode](qrcode.png)
@@ -12,5 +11,7 @@ THIS IS A VIRTUAL REPRESENTATION OF THE CARDBOARD BOX!
 ## [LIVE INSTANCE OF TRASH MAGIC WALL FOR CARDBOARD BOX](https://trashrobot.net/wall/library/library-of-trash/cardboard-box/)
 
   ![thing.png](thing.png)
-  
+ 
+ 
+## [LOCALHOST/CARDBOARD BOX](http://localhost/library/library-of-trash/cardboard-box/)  
   
