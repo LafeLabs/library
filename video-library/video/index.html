@@ -32,12 +32,17 @@ Library of things
         border-color:white;
         border-width:50px;
     }
+    h1{
+        text-align:center;
+    }
 </style>
 <body>
     <h1>
         <a href = "readme.html">readme.html</a>
     </h1>
+    <h1>GITHUB QR CODE</h1>
     <div id = "qrcode"></div>
+    <H1>INTERNET ARCHIVE QR CODE</H1>
     <div id = "video_qrcode"></div>
 
     <div class = "button" id = "save-qrcode-button">Save qrcode.png file</div>
@@ -116,6 +121,15 @@ document.getElementById("save-qrcode-button").onclick = function(){
     httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     httpc.send("data="+encodeURIComponent(png64.substring(22))+"&filename=qrcode.png");//send text to filesaver.php
      //location.reload(); 
+    png64 = document.getElementsByTagName("IMG")[1].src;
+    var httpc2 = new XMLHttpRequest();
+    var url = "save-png.php";        
+    httpc2.open("POST", url, true);
+    httpc2.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    httpc2.send("data="+encodeURIComponent(png64.substring(22))+"&filename=video_qrcode.png");//send text to filesaver.php
+     //location.reload(); 
+     
+     
 }
 
 document.getElementById("newnameinput").value = "";
@@ -266,7 +280,7 @@ function loadthing(){
 
             document.getElementById("thinglink").href = thing.url;
             document.getElementById("thinglink").innerHTML = thing.display;
-            
+
             document.getElementById("qrcode").innerHTML = "";
             qrcode = new QRCode(document.getElementById("qrcode"), {
             	text: thing.url,
@@ -276,6 +290,16 @@ function loadthing(){
             	colorLight : "#ffffff",
             	correctLevel : QRCode.CorrectLevel.H
             });
+            document.getElementById("video_qrcode").innerHTML = "";
+            qrcode = new QRCode(document.getElementById("video_qrcode"), {
+            	text: thing.video_url,
+            	width: codesquaresize,
+            	height: codesquaresize,
+            	colorDark : "#000000",
+            	colorLight : "#ffffff",
+            	correctLevel : QRCode.CorrectLevel.H
+            });
+
             loadtable();
         }
     };

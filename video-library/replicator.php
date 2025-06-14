@@ -1,5 +1,5 @@
 <?php
-$dnaurl = "https://raw.githubusercontent.com/lafelabs/library/refs/heads/main/dna.txt";
+$dnaurl = "https://raw.githubusercontent.com/LafeLabs/library/refs/heads/main/video-library/dna.txt";
 
 if(isset($_GET["dna"])){
     $dnaurl = $_GET["dna"];
@@ -11,7 +11,7 @@ $dna = json_decode($dnaraw);
 
 mkdir("php");
 
-copy("https://raw.githubusercontent.com/lafelabs/library/refs/heads/main/php/replicator.txt","replicator.php");
+copy("https://raw.githubusercontent.com/LafeLabs/library/refs/heads/main/video-library/php/replicator.txt","replicator.php");
 
 
 foreach($dna->html as $value){
