@@ -38,6 +38,8 @@ Library of things
         <a href = "readme.html">readme.html</a>
     </h1>
     <div id = "qrcode"></div>
+    <div id = "video_qrcode"></div>
+
     <div class = "button" id = "save-qrcode-button">Save qrcode.png file</div>
     <h1>
         <a href = "library.json">library.json</a>
@@ -302,14 +304,14 @@ function savelibrary(){
 }
 
 function fixthing(){
-    if(thing.index == undefined){    
-        thing.index ="book 1";
-    }
     if(thing.url == undefined){
-        thing.url = "https://github.com/lafelabs/library/";
+        thing.url = "https://github.com/LafeLabs/library/tree/main/video-library/video";
+    }
+    if(thing.video_url == undefined){
+        thing.video_url = "";
     }
     if(thing.display == undefined){
-        thing.display = "library";
+        thing.display = "video";
     }
 }
 

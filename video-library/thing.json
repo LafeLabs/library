@@ -1,21 +1,11 @@
 {
     "url": "https://github.com/LafeLabs/library/tree/main/video-library/video",
     "display": "video",
-    "title": "",
-    "author": "",
-    "location": "",
-    "loc call number": "",
-    "worldcat number": "",
-    "message": "",
-    "notes": "",
+    "title": "add title here",
+    "date": "",
+    "cast": "",
     "description": "",
-    "condition": "",
-    "publisher": "",
-    "isbn": "",
-    "dewey decimal call number": "",
-    "contact": "",
-    "subjects": "",
-    "keywords": "",
-    "length": "",
-    "index": "book 1"
+    "language": "",
+    "director": "",
+    "video_url": "https://archive.org/details/HyperNormalisation"
 }
