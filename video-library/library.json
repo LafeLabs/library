@@ -1,25 +1,14 @@
 [
     {
-        "url": "https://github.com/LafeLabs/library/tree/main/video-library/video",
-        "display": "video",
-        "title": "add title here",
+        "url": "https://github.com/LafeLabs/library/tree/main/video-library/hacker-film-archive",
+        "display": "hacker film archive",
+        "title": "hacker film archive from archive.org",
         "date": "",
         "cast": "",
         "description": "",
         "language": "",
         "director": "",
-        "video_url": "https://archive.org/details/HyperNormalisation"
-    },
-    {
-        "url": "https://github.com/LafeLabs/library/tree/main/video-library/video",
-        "display": "video",
-        "title": "add title here",
-        "date": "",
-        "cast": "",
-        "description": "",
-        "language": "",
-        "director": "",
-        "video_url": "https://archive.org/details/HyperNormalisation"
+        "video_url": "https://archive.org/details/ComputerHackingDocumentriesMegaCollection"
     },
     {
         "url": "https://github.com/LafeLabs/library/tree/main/video-library/hypernormalisation",
@@ -31,8 +20,19 @@
         "language": "English",
         "director": "Adam Curis",
         "video_url": "https://archive.org/details/HyperNormalisation"
-    }
-]    {
+    },
+    {
+        "url": "https://github.com/LafeLabs/library/tree/main/video-library/video",
+        "display": "video",
+        "title": "add title here",
+        "date": "",
+        "cast": "",
+        "description": "",
+        "language": "",
+        "director": "",
+        "video_url": "https://archive.org/details/HyperNormalisation"
+    },
+    {
         "url": "https://github.com/LafeLabs/library/tree/main/video-library/video",
         "display": "video",
         "title": "add title here",
